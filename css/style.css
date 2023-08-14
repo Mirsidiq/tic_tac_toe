@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 @font-face {
+    font-display: swap;
     font-family: 'Retro Gaming';
     font-style: normal;
     font-weight: normal;
-    src: local('Retro Gaming'), url('Retro Gaming.woff') format('woff');
+    src:url('../fonts/Retro\ Gaming.woff') format('woff');
 }
 body{
     font-family: 'Retro Gaming';

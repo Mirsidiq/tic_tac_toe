@@ -11,13 +11,13 @@ const renderCharacters=()=>{
             if(ceils[i]==null){
                 gameItems[i].textContent=currentPlayer
             ceils[i]=currentPlayer 
-            if(winner()){
+            if(winner() !=false){
                 let winBlocks=winner()
                 for(let item of winBlocks){
                     gameItems[item].style.backgroundColor="#7CFC00"
                 }
                 gameTitle.textContent=`${currentPlayer} has won`
-                currentPlayer=''
+                ceils.fill('')
                 return
             }
             else if(!ceils.includes(null)){
